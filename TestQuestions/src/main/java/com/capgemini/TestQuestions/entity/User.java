@@ -1,6 +1,8 @@
 package com.capgemini.TestQuestions.entity;
 
 
+import java.math.BigInteger;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -29,7 +31,7 @@ private String password;
 	@Column(length=15)
 private String rePassword;
 	@Column(length=15)
-private int phonenumber;
+private BigInteger phonenumber;
 	@Column(length=25)
 	private String emailId;
 public String getUserId() {
@@ -56,10 +58,10 @@ public String getRePassword() {
 public void setRePassword(String rePassword) {
 	this.rePassword = rePassword;
 }
-public int getPhonenumber() {
+public BigInteger getPhonenumber() {
 	return phonenumber;
 }
-public void setPhonenumber(int phonenumber) {
+public void setPhonenumber(BigInteger phonenumber) {
 	this.phonenumber = phonenumber;
 }
 public String getEmailId() {
